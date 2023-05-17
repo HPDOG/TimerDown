@@ -1,0 +1,30 @@
+//
+//  PrefixHeader.pch
+//  TimerDown
+//
+//  Created by HPDOG on 2023/5/16.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define SCREENBOUNDS [UIScreen mainScreen].bounds
+#define SCREENWIDTH SCREENBOUNDS.size.width
+#define SCREENHEIGHT SCREENBOUNDS.size.height
+
+#define kViewWidthScale (SCREENWIDTH /  375.0f)
+
+#import <Masonry.h>
+#import "UIView+Extension.h"
+
+#undef  RGB_COLOR
+#define RGB_COLOR(r, g, b)      [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
+
+#ifdef DEBUG
+#define NSLog(fmt, ...) {NSLog((@"%s [Line %d] " fmt), __FUNCTION__, __LINE__, ##__VA_ARGS__);}
+#else
+#define NSLog(format, ...)
+#endif
+
+
+#endif /* PrefixHeader_pch */

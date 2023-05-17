@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CE438D153A313174AED82BB /* Pods_TimerDown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345E4A4658262712EEFB5AD8 /* Pods_TimerDown.framework */; };
+		7910C5C42A13189600541DDE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7910C5C32A13189600541DDE /* AppDelegate.m */; };
+		7910C5C72A13189600541DDE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7910C5C62A13189600541DDE /* SceneDelegate.m */; };
+		7910C5CA2A13189600541DDE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7910C5C92A13189600541DDE /* ViewController.m */; };
+		7910C5CD2A13189600541DDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7910C5CB2A13189600541DDE /* Main.storyboard */; };
+		7910C5CF2A13189900541DDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7910C5CE2A13189900541DDE /* Assets.xcassets */; };
+		7910C5D22A13189900541DDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7910C5D02A13189900541DDE /* LaunchScreen.storyboard */; };
+		7910C5D52A13189900541DDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7910C5D42A13189900541DDE /* main.m */; };
+		7910C5EC2A131E3800541DDE /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7910C5DF2A131E3800541DDE /* Timer.m */; };
+		7910C5F02A131E3800541DDE /* CountDownTimeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7910C5E82A131E3800541DDE /* CountDownTimeView.m */; };
+		7910C5F32A13259A00541DDE /* CustomUILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7910C5F12A13259800541DDE /* CustomUILabel.m */; };
+		7910C5FB2A132A0C00541DDE /* CountDownTimeView+TextColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7910C5F52A132A0B00541DDE /* CountDownTimeView+TextColor.m */; };
+		7910C5FC2A132A0C00541DDE /* CountDownTimeView+Font.m in Sources */ = {isa = PBXBuildFile; fileRef = 7910C5F62A132A0B00541DDE /* CountDownTimeView+Font.m */; };
+		7910C5FD2A132A0C00541DDE /* CountDownTimeView+BGColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7910C5FA2A132A0C00541DDE /* CountDownTimeView+BGColor.m */; };
+		7910C6002A132AEF00541DDE /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7910C5FE2A132AEF00541DDE /* UIView+Extension.m */; };
+		7910C6032A132BEA00541DDE /* NSString+Font.m in Sources */ = {isa = PBXBuildFile; fileRef = 7910C6012A132BE900541DDE /* NSString+Font.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		08C14D444D60F6BDE08F1EDD /* Pods-TimerDown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimerDown.debug.xcconfig"; path = "Target Support Files/Pods-TimerDown/Pods-TimerDown.debug.xcconfig"; sourceTree = "<group>"; };
+		345E4A4658262712EEFB5AD8 /* Pods_TimerDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimerDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7910C5BF2A13189600541DDE /* TimerDown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimerDown.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7910C5C22A13189600541DDE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7910C5C32A13189600541DDE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7910C5C52A13189600541DDE /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		7910C5C62A13189600541DDE /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		7910C5C82A13189600541DDE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7910C5C92A13189600541DDE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7910C5CC2A13189600541DDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7910C5CE2A13189900541DDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7910C5D12A13189900541DDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7910C5D32A13189900541DDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7910C5D42A13189900541DDE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7910C5DC2A131E3800541DDE /* TXScrollLabelView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TXScrollLabelView+Extension.h"; sourceTree = "<group>"; };
+		7910C5DF2A131E3800541DDE /* Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Timer.m; sourceTree = "<group>"; };
+		7910C5E22A131E3800541DDE /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
+		7910C5E82A131E3800541DDE /* CountDownTimeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountDownTimeView.m; sourceTree = "<group>"; };
+		7910C5E92A131E3800541DDE /* CountDownTimeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountDownTimeView.h; sourceTree = "<group>"; };
+		7910C5F12A13259800541DDE /* CustomUILabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomUILabel.m; sourceTree = "<group>"; };
+		7910C5F22A13259800541DDE /* CustomUILabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomUILabel.h; sourceTree = "<group>"; };
+		7910C5F42A1326F400541DDE /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		7910C5F52A132A0B00541DDE /* CountDownTimeView+TextColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CountDownTimeView+TextColor.m"; sourceTree = "<group>"; };
+		7910C5F62A132A0B00541DDE /* CountDownTimeView+Font.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CountDownTimeView+Font.m"; sourceTree = "<group>"; };
+		7910C5F72A132A0B00541DDE /* CountDownTimeView+Font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CountDownTimeView+Font.h"; sourceTree = "<group>"; };
+		7910C5F82A132A0C00541DDE /* CountDownTimeView+TextColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CountDownTimeView+TextColor.h"; sourceTree = "<group>"; };
+		7910C5F92A132A0C00541DDE /* CountDownTimeView+BGColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CountDownTimeView+BGColor.h"; sourceTree = "<group>"; };
+		7910C5FA2A132A0C00541DDE /* CountDownTimeView+BGColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CountDownTimeView+BGColor.m"; sourceTree = "<group>"; };
+		7910C5FE2A132AEF00541DDE /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		7910C5FF2A132AEF00541DDE /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		7910C6012A132BE900541DDE /* NSString+Font.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Font.m"; sourceTree = "<group>"; };
+		7910C6022A132BEA00541DDE /* NSString+Font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Font.h"; sourceTree = "<group>"; };
+		E88D4AE99256D0DB4572D872 /* Pods-TimerDown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimerDown.release.xcconfig"; path = "Target Support Files/Pods-TimerDown/Pods-TimerDown.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7910C5BC2A13189600541DDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CE438D153A313174AED82BB /* Pods_TimerDown.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7910C5B62A13189500541DDE = {
+			isa = PBXGroup;
+			children = (
+				7910C5C12A13189600541DDE /* TimerDown */,
+				7910C5C02A13189600541DDE /* Products */,
+				8AC69C131252BA0934E63427 /* Pods */,
+				FFE3E6B6BFADD07BA93B4BFB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7910C5C02A13189600541DDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7910C5BF2A13189600541DDE /* TimerDown.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7910C5C12A13189600541DDE /* TimerDown */ = {
+			isa = PBXGroup;
+			children = (
+				7910C5C22A13189600541DDE /* AppDelegate.h */,
+				7910C5C32A13189600541DDE /* AppDelegate.m */,
+				7910C5C52A13189600541DDE /* SceneDelegate.h */,
+				7910C5C62A13189600541DDE /* SceneDelegate.m */,
+				7910C5C82A13189600541DDE /* ViewController.h */,
+				7910C5C92A13189600541DDE /* ViewController.m */,
+				7910C5DB2A131E3800541DDE /* CountDownTime */,
+				7910C5CB2A13189600541DDE /* Main.storyboard */,
+				7910C5CE2A13189900541DDE /* Assets.xcassets */,
+				7910C5D02A13189900541DDE /* LaunchScreen.storyboard */,
+				7910C5D32A13189900541DDE /* Info.plist */,
+				7910C5D42A13189900541DDE /* main.m */,
+				7910C5F42A1326F400541DDE /* PrefixHeader.pch */,
+			);
+			path = TimerDown;
+			sourceTree = "<group>";
+		};
+		7910C5DB2A131E3800541DDE /* CountDownTime */ = {
+			isa = PBXGroup;
+			children = (
+				7910C5DC2A131E3800541DDE /* TXScrollLabelView+Extension.h */,
+				7910C5F22A13259800541DDE /* CustomUILabel.h */,
+				7910C5F12A13259800541DDE /* CustomUILabel.m */,
+				7910C5DD2A131E3800541DDE /* Model */,
+				7910C5E62A131E3800541DDE /* View */,
+			);
+			path = CountDownTime;
+			sourceTree = "<group>";
+		};
+		7910C5DD2A131E3800541DDE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7910C6022A132BEA00541DDE /* NSString+Font.h */,
+				7910C6012A132BE900541DDE /* NSString+Font.m */,
+				7910C5FF2A132AEF00541DDE /* UIView+Extension.h */,
+				7910C5FE2A132AEF00541DDE /* UIView+Extension.m */,
+				7910C5F92A132A0C00541DDE /* CountDownTimeView+BGColor.h */,
+				7910C5FA2A132A0C00541DDE /* CountDownTimeView+BGColor.m */,
+				7910C5F72A132A0B00541DDE /* CountDownTimeView+Font.h */,
+				7910C5F62A132A0B00541DDE /* CountDownTimeView+Font.m */,
+				7910C5F82A132A0C00541DDE /* CountDownTimeView+TextColor.h */,
+				7910C5F52A132A0B00541DDE /* CountDownTimeView+TextColor.m */,
+				7910C5E22A131E3800541DDE /* Timer.h */,
+				7910C5DF2A131E3800541DDE /* Timer.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7910C5E62A131E3800541DDE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7910C5E92A131E3800541DDE /* CountDownTimeView.h */,
+				7910C5E82A131E3800541DDE /* CountDownTimeView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8AC69C131252BA0934E63427 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08C14D444D60F6BDE08F1EDD /* Pods-TimerDown.debug.xcconfig */,
+				E88D4AE99256D0DB4572D872 /* Pods-TimerDown.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FFE3E6B6BFADD07BA93B4BFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				345E4A4658262712EEFB5AD8 /* Pods_TimerDown.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7910C5BE2A13189600541DDE /* TimerDown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7910C5D82A13189900541DDE /* Build configuration list for PBXNativeTarget "TimerDown" */;
+			buildPhases = (
+				35B359A27B1A12A75EDC14A8 /* [CP] Check Pods Manifest.lock */,
+				7910C5BB2A13189600541DDE /* Sources */,
+				7910C5BC2A13189600541DDE /* Frameworks */,
+				7910C5BD2A13189600541DDE /* Resources */,
+				78B15F68DE17D8198972F483 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimerDown;
+			productName = TimerDown;
+			productReference = 7910C5BF2A13189600541DDE /* TimerDown.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7910C5B72A13189500541DDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					7910C5BE2A13189600541DDE = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 7910C5BA2A13189500541DDE /* Build configuration list for PBXProject "TimerDown" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7910C5B62A13189500541DDE;
+			productRefGroup = 7910C5C02A13189600541DDE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7910C5BE2A13189600541DDE /* TimerDown */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7910C5BD2A13189600541DDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7910C5D22A13189900541DDE /* LaunchScreen.storyboard in Resources */,
+				7910C5CF2A13189900541DDE /* Assets.xcassets in Resources */,
+				7910C5CD2A13189600541DDE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35B359A27B1A12A75EDC14A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimerDown-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78B15F68DE17D8198972F483 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimerDown/Pods-TimerDown-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimerDown/Pods-TimerDown-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TimerDown/Pods-TimerDown-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7910C5BB2A13189600541DDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7910C5CA2A13189600541DDE /* ViewController.m in Sources */,
+				7910C5FB2A132A0C00541DDE /* CountDownTimeView+TextColor.m in Sources */,
+				7910C5F02A131E3800541DDE /* CountDownTimeView.m in Sources */,
+				7910C5F32A13259A00541DDE /* CustomUILabel.m in Sources */,
+				7910C6032A132BEA00541DDE /* NSString+Font.m in Sources */,
+				7910C5C42A13189600541DDE /* AppDelegate.m in Sources */,
+				7910C6002A132AEF00541DDE /* UIView+Extension.m in Sources */,
+				7910C5FC2A132A0C00541DDE /* CountDownTimeView+Font.m in Sources */,
+				7910C5FD2A132A0C00541DDE /* CountDownTimeView+BGColor.m in Sources */,
+				7910C5EC2A131E3800541DDE /* Timer.m in Sources */,
+				7910C5D52A13189900541DDE /* main.m in Sources */,
+				7910C5C72A13189600541DDE /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7910C5CB2A13189600541DDE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7910C5CC2A13189600541DDE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7910C5D02A13189900541DDE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7910C5D12A13189900541DDE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7910C5D62A13189900541DDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7910C5D72A13189900541DDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7910C5D92A13189900541DDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08C14D444D60F6BDE08F1EDD /* Pods-TimerDown.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S5NPR347XR;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TimerDown/PrefixHeader.pch;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimerDown/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HPDOG.Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7910C5DA2A13189900541DDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E88D4AE99256D0DB4572D872 /* Pods-TimerDown.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S5NPR347XR;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TimerDown/PrefixHeader.pch;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimerDown/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HPDOG.Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7910C5BA2A13189500541DDE /* Build configuration list for PBXProject "TimerDown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7910C5D62A13189900541DDE /* Debug */,
+				7910C5D72A13189900541DDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7910C5D82A13189900541DDE /* Build configuration list for PBXNativeTarget "TimerDown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7910C5D92A13189900541DDE /* Debug */,
+				7910C5DA2A13189900541DDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7910C5B72A13189500541DDE /* Project object */;
+}
