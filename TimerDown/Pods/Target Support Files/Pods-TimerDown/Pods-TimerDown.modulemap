@@ -1,0 +1,6 @@
+framework module Pods_TimerDown {
+  umbrella header "Pods-TimerDown-umbrella.h"
+
+  export *
+  module * { export * }
+}
